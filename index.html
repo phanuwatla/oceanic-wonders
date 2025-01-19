@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanic Wonders | A VR Aquarium Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./images/fish-png-15-png-image-3000.png" type="image/png">
+    <style>
+        @font-face {
+            font-family: 'Ocean';
+            src: url('./assets/OceanSeriesDemoRegular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Prompt';
+            src: url('./assets/Prompt-Regular.ttf');
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Prompt', Arial, sans-serif;
+            background-image: url('./images/ocean.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            padding: 0.8em 1.2em;
+            background-color: #0041c4;
+            border-radius: 0.5em;
+            width: fit-content;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+        }
+
+        h1 {
+            font-family: 'Ocean', Arial, sans-serif;
+            font-size: 5em;
+            margin-bottom: 0.2em;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        img {
+            width: 15em;
+        }
+
+        .info-btn {
+            font-size: 1em;
+            color: #0041c4;
+            text-decoration: none;
+            padding: 0.8em 1.2em;
+            background-color: white;
+            border-radius: 0.5em;
+            width: fit-content;
+            outline: 2px solid #0041c4;
+            border: none;
+            font-family: 'Prompt', Arial, sans-serif;
+            margin-left: 1em;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Oceanic Wonders</h1>
+            <h3>A VR Aquarium Experience</h3>
+        </div>
+        <img src="./images/fish-png-15-png-image-3000.png" alt="Fish Image">
+        <div>
+            <a href='./aquarium.html'>
+                <i class="fas fa-water"></i> เข้าชมพิพิธภัณฑ์สัตว์น้ำ
+            </a>
+            <button class="info-btn" onclick="showInfo()">
+                <i class="fas fa-question"></i> คืออะไร
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function showInfo() {
+            alert("ดื่มด่ำโลกใต้น้ำในมือคุณ! 🌊✨ สำรวจพิพิธภัณฑ์สัตว์น้ำ AR Aquarium ที่เต็มไปด้วยชีวิตใต้น้ำหลากชนิด พร้อมเสียงเพลงสุดผ่อนคลาย คลิกสัตว์น้ำในตู้เพื่อค้นพบข้อมูลที่น่าสนใจ เช่น ชื่อทางวิทยาศาสตร์ ถิ่นที่อยู่ อาหาร และเคล็ดลับการดูแลที่คุณอาจไม่เคยรู้มาก่อน! 🌟");
+        }
+</script>
